@@ -1,0 +1,53 @@
+<x-nav-link>
+            hello 
+
+            </x-nav-link>
+           <x-application-logo>
+           hello 
+
+           </x-application-logo>
+
+            <x-danger-button>
+            hello 
+
+            </x-danger-button>
+
+            
+
+            <x-dropdown-link>
+            hello 
+ 
+            </x-dropdown-link>
+
+             
+
+            <x-input-label>
+                hello 
+            </x-input-label>
+
+           
+
+            <x-nav-link>
+            hello 
+
+            </x-nav-link>
+
+            <x-primary-button>
+            hello 
+
+            </x-primary-button>
+
+            <x-responsive-nav-link>
+            hello 
+
+            </x-responsive-nav-link>
+
+            <x-secondary-button>
+            hello 
+
+            </x-secondary-button>
+
+            <x-text-input>
+            hello 
+
+            </x-text-input>

@@ -1,0 +1,6 @@
+<?php extract(collect($attributes->getAttributes())->mapWithKeys(function ($value, $key) { return [Illuminate\Support\Str::camel(str_replace([':', '.'], ' ', $key)) => $value]; })->all(), EXTR_SKIP); ?>
+@props(['form','tag','xOn:click','wire:click','href','target','type','color','keyBindings','tooltip','disabled','icon','indicator','indicatorColor','size','labelSrOnly','class','outlined','labeledFrom','iconPosition','iconSize','labeledFrom','iconPosition','iconSize'])
+<x-filament::button :form="$form" :tag="$tag" :x-on:click="$xOnClick" :wire:click="$wireClick" :href="$href" :target="$target" :type="$type" :color="$color" :key-bindings="$keyBindings" :tooltip="$tooltip" :disabled="$disabled" :icon="$icon" :indicator="$indicator" :indicator-color="$indicatorColor" :size="$size" :label-sr-only="$labelSrOnly" :class="$class" :outlined="$outlined" :labeledFrom="$labeledFrom" :iconPosition="$iconPosition" :iconSize="$iconSize" :labeled-from="$labeledFrom" :icon-position="$iconPosition" :icon-size="$iconSize" >
+
+{{ $slot ?? "" }}
+</x-filament::button>

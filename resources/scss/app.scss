@@ -1,0 +1,366 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+
+$secondary-color: #6c757d;
+
+body {
+  font-family: sans-serif;
+}
+
+.login-box {
+  max-width: 400px;
+  margin: 3rem auto;
+  background-color: abs(#{100%}); /* Updated */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+}
+
+.login-logo {
+  text-align: center;
+  margin-bottom: 1rem;
+
+  a {
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
+
+.login-card-body {
+  padding: 1rem;
+
+  .login-box-msg {
+    margin-bottom: 1.5rem;
+  }
+
+  form {
+    .input-group {
+      margin-bottom: 1rem;
+
+      input {
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        padding: 0.5rem;
+      }
+
+      .input-group-append {
+        span {
+          border-radius: 3px;
+          background-color: abs(#{100%}); /* Updated */
+          color: #fff;
+          font-size: 1.2rem;
+          padding: 0.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    .error {
+      color: red;
+      font-size: 0.8rem;
+      margin-top: 0.5rem;
+      display: block;
+    }
+
+    .btn-primary {
+      border: none;
+      padding: 0.7rem 1rem;
+      border-radius: 3px;
+      font-weight: 600;
+      color: #fff;
+      transition: all 0.3s;
+    }
+  }
+}
+
+.animated-badge {
+  animation: spin-bounce 2s linear infinite;
+}
+
+@keyframes spin-bounce {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.preview {
+  overflow: hidden;
+  width: 234px !important;
+  height: 121px !important;
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+
+.container {
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.navbar-custom {
+  background-color: abs(#{100%}); /* Updated */
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-left {
+  width: 50%;
+  position: relative;
+  padding: 0;
+}
+
+.section-left::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  height: 2px;
+  width: 30%;
+  background-color: abs(#{100%}); /* Updated */
+  border-radius: 50px;
+  z-index: -1;
+}
+
+.section-link {
+  display: block;
+  padding: 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.my-button {
+  background-color: abs(#{100%}); /* Updated */
+  color: #333333;
+  border: none;
+  padding: 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  padding: 2rem 1rem;
+}
+
+.my-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.my-button:active {
+  transform: translateY(5px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: abs(#{100%}); /* Updated */
+  border-collapse: collapse;
+  border: 1px solid transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Open Sans', sans-serif;
+}
+
+thead {
+  background: linear-gradient(to bottom right, #212529, #007f7f);
+}
+
+th {
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #dee2e6;
+  vertical-align: bottom;
+  background-color: #4682b4;
+}
+
+th:hover {
+  color: #666666;
+  background-color: #f5f5f5;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #dee2e6;
+}
+
+th:hover,
+td:hover {
+  color: #666666;
+  background-color: #f5f5f5;
+  transform: scale(1.05);
+}
+
+tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.menu {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-link {
+  padding: 1rem 1.5rem;
+}
+
+.nav-item {
+  margin-bottom: 1rem;
+}
+
+.nav-link:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link i {
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  padding-right: 2rem;
+}
+
+.nav-link i {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-treeview {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  width: 200px;
+  background-color: abs(#{100%}); /* Updated */
+}
+
+
+.login-box {
+  max-width: 400px;
+  margin: 3rem auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+}
+
+.login-logo {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.login-logo a {
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-card-body {
+  padding: 1rem;
+}
+
+.login-box-msg {
+  margin-bottom: 1.5rem;
+}
+
+form .input-group {
+  margin-bottom: 1rem;
+}
+
+form input {
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+form .input-group-append span {
+  border-radius: 3px;
+  background-color: abs(#{100%});
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form .error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+form .btn-primary {
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 3px;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.3s;
+}
