@@ -12,6 +12,20 @@ class OrderController extends Controller
     /**
      * Display a listing of the resource.
      */
+
+    
+    public function search(Request $request)
+{
+    $search = $request->search;
+    $orders = Order::where(function ($query) use ($search) {
+        $query->where('vehicle', 'like', "%$search%")
+            ->orWhere('deliveryStatus', 'like', "%$search%");
+    })->paginate(5);
+
+    return view('orders.index', compact('orders', 'search'));
+}
+
+    
     public function index()
     {   
 
