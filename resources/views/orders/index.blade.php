@@ -3,7 +3,21 @@
     <div class="container">
     <div class="text-center mt-5"> 
         <h1>Orders</h1>
-    </div>        <div class="table-responsive">
+    </div>      
+         <!-- You -->
+
+ <div class="col-md-6 search-section">
+  <div class="form-group">
+    <form method="get" action="/search">
+      <div class="input-group">
+        <input class="form-control" name="search" placeholder="Search...">
+        <button type="submit" class="btn btn-primary">Search</button>
+      </div>
+    </form>
+  </div>
+</div>
+<!---end-->
+        <div class="table-responsive">
             <table class="table table-bordered table-striped table-hover">
                 <thead class="thead-dark">
                     <tr>
