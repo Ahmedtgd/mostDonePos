@@ -47,4 +47,5 @@ Route::get('/route-buttons', function () {
     return view('routes');
 });
 
- 
+ Route::get('/search',[OrderController::class,'search']);
+
